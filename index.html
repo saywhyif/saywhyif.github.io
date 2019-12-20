@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 	</head>
 	<body class="is-preload">
 
@@ -22,7 +23,7 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>这是&nbsp;&nbsp;雅比斯四家<br />
-						专属圣诞礼物</h1>
+						专属圣诞礼物</h1> 
 						<p>欢迎来到&nbsp;&nbsp;&nbsp;Jabez4&nbsp;&nbsp;&nbsp;主页  
 						</p>
 						<ul class="actions">
@@ -32,7 +33,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">内测中</a>
+						<a href="index.html" class="logo">内测中v2.0</a>
 					</header>
 
 				<!-- Nav -->
@@ -227,7 +228,19 @@
 							</section>
 						</section>
 					</footer>
-
+    <p>comment test2</p>
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: 'rOQeQaSRuGHNKkDwktukhGhY-gzGzoHsz',
+    appKey: 'MmBMqEdjo3FSYIE55Wi4d60W',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go' 
+        })
+    </script>
 				<!-- Copyright -->
 					<div id="copyright">
 						<ul><li>&copy;<span id="busuanzi_container_site_pv">
@@ -235,7 +248,7 @@
 					</div>
 
 			</div>
-      <div class="comment"></div>
+      
       <!-- 来必力City版安装代码 -->
 <!-- <div id="lv-container" data-id="city" data-uid="MTAyMC80Nzk5NS8yNDQ5Mg==">
   来必力
@@ -258,22 +271,7 @@
 
           <!--载入js，在</body>之前插入即可-->
     <!--Leancloud 操作库:-->
-    <p>comment test</p>>
-    <script src="dist/av-min.js"></script>
-    <!--Valine 的核心代码库-->
-    <script src="dist/Valine.min.js"></script>
-    <script>
-        new Valine({
-            // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-            av: AV, 
-            el: '.comment',
-            emoticon_url: 'https://cloud.panjunwen.com/alu',
-            emoticon_list: ["吐.png","期待.png","高兴.png","吐血倒地.png","哭泣.png","欢呼.png"],
-            app_id: 'rOQeQaSRuGHNKkDwktukhGhY-gzGzoHsz', // 这里填写上面得到的APP ID
-            app_key: 'MmBMqEdjo3FSYIE55Wi4d60W', // 这里填写上面得到的APP KEY
-            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!', // 留言框占位提示文字
-        });
-    </script>
+  
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
